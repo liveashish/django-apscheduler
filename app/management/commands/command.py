@@ -21,7 +21,7 @@ class Command(BaseCommand):
 		     scheduler = BackgroundScheduler()
 		     scheduler.add_job(handle, 'interval', seconds=3)
 		     scheduler.start()
-		     print('Press Ctrl+{0} to exit'.format('Break' if os.name == 'nt' else 'C'))
+		     #print('Press Ctrl+{0} to exit'.format('Break' if os.name == 'nt' else 'C'))
 		 
 		     try:
 		        # This is here to simulate application activity (which keeps the main thread alive).
